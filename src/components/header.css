@@ -1,0 +1,24 @@
+header {
+  background-color: #fff;
+  font-family: "Inter", serif;
+  width: 45em;
+  height: 6.9375em;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .6875em;
+  box-shadow: 0 .0625em .1875em rgba(14, 14, 13, 10%);
+}
+
+header > img {
+  width: 2.6875em;
+  height: 3.25em;
+} 
+
+header > h1 {
+  font-size: 2rem;
+  font-weight: normal;
+  color: #141413;
+  letter-spacing: -0.05em;
+}

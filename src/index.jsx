@@ -1,9 +1,7 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';
+import App from './App';
 
-function App() {
-  return <h1>Cheff App</h1>
-}
 
 const root = ReactDOM.createRoot(document.getElementById('app'))
 root.render(<App />)
