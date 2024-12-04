@@ -18,8 +18,17 @@ function Main( ) {
   const ingredientsListItems = ingredients.map(ingredient => <li key={ingredient}>{ingredient}</li>)
 
   async function handelGetRecipeClick() {
-    const recipeResponse = await getRecipeFromMistral(ingredients)
-    setRecipe(recipeResponse)
+    const recipeResponse = await fetch("http://localhost:8888/.netlify/functions/AI", {
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      method: "POST",
+      body: JSON.stringify({ingredients})
+    })
+    const response = await recipeResponse.json();
+    setRecipe(
+      response.message
+    )
     setRecipeShown(!recipeShown)
   }
 
