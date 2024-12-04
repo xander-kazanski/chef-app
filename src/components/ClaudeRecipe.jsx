@@ -8,5 +8,3 @@ function ClaudeRecipe({recipe}) {
     <div dangerouslySetInnerHTML={{__html: HTMLRecipe}}></div>
   </section>)
 }
-
-export default ClaudeRecipe;
