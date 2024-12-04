@@ -3,5 +3,150 @@
 }
 
 body {
-  background-color: #E8E8E8;
+  background-color: #FAFAF8;
+}
+
+header {
+  background-color: #fff;
+  font-family: "Inter", serif;
+  width: 45em;
+  height: 6.9375em;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .6875em;
+  box-shadow: 0 .0625em .1875em rgba(14, 14, 13, 10%);
+}
+
+header > img {
+  width: 2.6875em;
+  height: 3.25em;
+} 
+
+header > h1 {
+  font-size: 2rem;
+  font-weight: normal;
+  color: #141413;
+  letter-spacing: -0.05em;
+}
+
+main {
+  background-color: #FAFAF8;
+  font-family: "Inter", serif;
+  width: 45em;
+  min-height: 11.25em;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.add-ingredient-form {
+  display: flex;
+  justify-content: center;
+  gap: 2.078125em;
+  align-items: center;
+  margin-top: 70px;
+}
+
+.add-ingredient-form > input {
+  border-radius: 0.4285em;
+  border: 0.0714em solid #D1D5DB;
+  padding: 0.6428em 0.9285em;
+  box-shadow: 0 0.0714em 0.1428em 0 rgba(0, 0, 0, 0.05);
+  flex-grow: 1;
+  min-width: 24.9375em;
+  height: 2.375em;
+  color: #6B7280;
+  font-size: 0.875rem;
+  font-family: inherit;
+}
+
+.add-ingredient-form > button {
+  height: 2.375em;
+  min-width: 11.4375em;
+  background-color: #141413;
+  color: #FAFAF8;
+  border-radius: 0.4285em;
+  font-family: inherit;
+  font-size: 0.875rem;
+  border: none;
+}
+
+section {
+  min-width: 34em;
+  margin-top: 48px;
+}
+
+section h2 {
+  font-size: 30px;
+  margin: 0 0 24px 0;
+}
+section ul {
+  font-size: 18px;
+  color: #475467;
+  margin: 0 0 48px 0;
+}
+
+section ul li {
+  margin-bottom: 28px;
+  font-size: 18px;
+}
+
+.get-recipe-container {
+  background-color: #F0EFEB;
+  font-family: 'Inter', serif;
+  padding: 28px 42px 28px 42px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.get-recipe-container h3 {
+  margin: 0 0 8px 0;
+  color: #141413;
+  font-size: 18px;
+}
+
+.get-recipe-container p {
+  margin: 0;
+  color: #6B7280;
+  font-size: 14px;
+}
+
+.get-recipe-container button {
+  border: none;
+  background-color: #D17557;
+  min-width: 115px;
+  min-height: 38px;
+  border-radius: 6px;
+  color: #fff;
+  font-family: 'Inter', serif;
+  cursor: pointer;
+}
+
+.recipe {
+  width: 544px;
+}
+
+.recipe h2 {
+  color: #141413;
+}
+
+.suggested-recipe-container {
+  color: #475467;
+  line-height: 28px;
+}
+
+ol {
+  margin: 0
+}
+
+article {
+
+  font-size: 18px;
 }

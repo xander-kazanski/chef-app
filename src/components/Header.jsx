@@ -1,5 +1,5 @@
 import React from 'react';
-import "./header.css";
+
 import img from '../images/chef-claude-icon.png'
 
 function Header(props) {
