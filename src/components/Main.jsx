@@ -18,7 +18,7 @@ function Main( ) {
   const ingredientsListItems = ingredients.map(ingredient => <li key={ingredient}>{ingredient}</li>)
 
   async function handelGetRecipeClick() {
-    const recipeResponse = await fetch("https://velvety-heliotrope-366c68.netlify.app/.netlify/functions/AI", {
+    const recipeResponse = await fetch("https://chipper-mermaid-ed5ef6.netlify.app/.netlify/functions/AI", {
       headers: {
         'Content-Type': 'application/json'
       },
