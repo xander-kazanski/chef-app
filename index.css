@@ -234,3 +234,69 @@ button:disabled {
   opacity: 0.6;
   cursor: not-allowed;
 }
+
+.recipe-presets {
+  width: 100%;
+  max-width: 800px;
+  margin-top: 2rem;
+}
+
+.recipe-presets h2 {
+  color: var(--vscode-fg);
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+
+.preset-buttons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  width: 100%;
+}
+
+.preset-button {
+  background-color: var(--vscode-input-bg);
+  border: 1px solid #454545;
+  color: var(--vscode-fg);
+  padding: 1rem;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 3rem;
+}
+
+.preset-button:hover {
+  background-color: var(--vscode-button-bg);
+  border-color: var(--vscode-button-bg);
+  color: white;
+}
+
+.divider {
+  width: 100%;
+  max-width: 800px;
+  margin: 2rem 0;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: var(--vscode-fg);
+  opacity: 0.6;
+}
+
+.divider::before,
+.divider::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid #454545;
+}
+
+.divider span {
+  margin: 0 1rem;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+}
